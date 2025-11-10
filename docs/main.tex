@@ -1,0 +1,87 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[italian]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{authblk}
+\usepackage{multirow}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\renewcommand*{\Authsep}{\authorcr}
+\renewcommand*{\Authands}{\authorcr}
+
+\title{Stadium ticketing}
+\author{Qiao Qiao Cai (2111010)}
+\author{Samuele Vendramin (2111934)}
+\author{Stefano Longhena (2111936)}
+\author{Mattia Nicastro (2111024)}
+\affil{Dipartimento di Matematica, Triennale di Informatica}
+\date{}
+
+\begin{document}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Phito-FSP-APPITAD1-2.png}
+\end{figure}
+\maketitle
+
+\begin{abstract}
+La relazione delle specifiche del progetto di Tecnologie Web: sito di uno stadio che ospita numerosi eventi di cui si possono acquistare i biglietti selezionando il posto.
+\end{abstract}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|cc| }
+ \hline
+ Ruolo & Username & Password \\ \hline\hline
+ gestore & admin & admin \\ \hline
+ \multirow{2}{3em}{utente} & user & user \\
+ & user1 & user1 \\ \hline
+\end{tabular}
+\caption{Tabella contenente le informazioni di login già esistenti per test.}
+\label{table:1}
+\end{table}
+
+\tableofcontents
+\newpage
+
+\section{Introduzione}
+Il nostro gruppo ha deciso di progettare un sito di uno stadio che offre l'opportunità di acquistare biglietti agli eventi che ospitano. Per ogni biglietto è possibile selezionare un posto, il quale cambia di costo a seconda della sezione in cui si trova.
+Ogni evento ha una pagina che la descrive
+\subsection{Obiettivo}
+
+
+\section{Utenza}
+Sono descritti in questa sezione i casi d'uso dei diversi utenti che visitano il sito. Saranno specificati le funzionalità ai quali hanno accesso e le informazioni che possono visualizzare.
+\par
+Sono presenti nella tabella \ref{table:1} le informazioni di login già esistenti nel database.
+
+\subsection{Visitatori}
+Tutti coloro che visitano la pagina hanno accesso alla home, la pagina degli eventi, la pagina di login e quella di registrazione. 
+
+\subsection{Amministratore}
+Utente con accesso a pagine speciali di gestione del sito.
+
+\subsection{Utenti registrati}
+Gli utenti registrati nel sito devono eseguire l'accesso alla piattaforma tramite la pagina di login per visualizzare la loro zona personale. Questo include la pagine degli biglietti acquistati e il profilo.
+
+\section{Design}
+\subsection{Colori}
+\subsection{Font}
+\section{Struttura}
+\subsection{HTML}
+\subsection{CSS}
+Definito nel file \verb|style.css|. E' il foglio di stile
+\subsection{PHP}
+\subsection{Database}
+\section{Funzionalità}
+\subsection{Navigazione}
+
+\end{document}
