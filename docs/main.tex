@@ -9,46 +9,16 @@
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
 % Useful packages
-\usepackage{authblk}
 \usepackage{multirow}
 \usepackage{parskip}
+\usepackage{setspace}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
-\renewcommand*{\Authsep}{\authorcr}
-\renewcommand*{\Authands}{\authorcr}
-
-\title{Stadium ticketing}
-\author{Qiao Qiao Cai (2111010)}
-\author{Samuele Vendramin (2111934)}
-\author{Stefano Longhena (2111936)}
-\author{Mattia Nicastro (2111024)}
-\affil{Dipartimento di Matematica, Triennale di Informatica}
-\date{}
 
 \begin{document}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{Phito-FSP-APPITAD1-2.png}
-\end{figure}
-\maketitle
 
-\begin{abstract}
-La relazione delle specifiche del progetto di Tecnologie Web: sito di uno stadio che ospita numerosi eventi di cui si possono acquistare i biglietti selezionando il posto.
-\end{abstract}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{ |c|cc| }
- \hline
- Ruolo & Username & Password \\ \hline\hline
- gestore & admin & admin \\ \hline
- \multirow{2}{3em}{utente} & user & user \\
- & user1 & user1 \\ \hline
-\end{tabular}
-\caption{Tabella contenente le informazioni di login già esistenti per test.}
-\label{table:1}
-\end{table}
-
+\input{copertina}
+\newpage
 \tableofcontents
 \newpage
 
@@ -82,6 +52,5 @@ Definito nel file \verb|style.css|. E' il foglio di stile
 \subsection{PHP}
 \subsection{Database}
 \section{Funzionalità}
-\subsection{Navigazione}
-
+\subsection{Navigazione a tab}
 \end{document}
