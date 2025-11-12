@@ -1,0 +1,9 @@
+* {
+    padding: 0em;
+    margin: 0em;
+}
+
+html, body {
+    font-size: 100%;
+    line-height: 1.5em;
+}
