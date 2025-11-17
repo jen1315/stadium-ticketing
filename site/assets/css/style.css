@@ -3,7 +3,104 @@
     margin: 0em;
 }
 
+:root {
+    --bgcolor: #050B1F;
+    --txtcolor: #fff;
+    --linkcolor: #fff;
+    --visitedcolor: #AFEB60;
+    --iconcolor: #BDBDBD;
+    --content_bgcolor: #BDBDBD;
+    --content_txtcolor: #000;
+}
+
 html, body {
     font-size: 100%;
+    font-family: Roboto, sans-serif;
     line-height: 1.5em;
+}
+
+body {
+    background-color: #050B1F;
+    color: var(--txtcolor);
+}
+
+/* Aiuti alla navigazione */
+.helpNav {
+    position: absolute;
+    text-indent: -999em;
+}
+
+.helpNav:focus {
+    position: static;
+    text-indent: 0em;
+}
+
+.helpList ul {
+    display: inline;
+}
+
+/* Menu di navigazione */
+#menu {
+    background-color: var(--bgcolor);
+    padding: 1em 0em 0.5em 1em;
+}
+
+#menu li {
+    display: inline;
+    padding-left: 3em;
+}
+
+/* Header */
+header h1{
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url("../images/arena.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 10em;
+    margin-top: 0.3em;
+    text-align: center;
+    color: var(--visitedcolor);
+}
+
+/* Breadcrumb */
+
+#breadcrumb {
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+    padding: 0.5em 0em 0.5em 1em;
+}
+
+#breadcrumb a:link {
+    color: var(--linkcolor);
+}
+
+#breadcrumb a:visited {
+    color: var(--visitedcolor);
+}
+
+/* Contenuto */
+a {
+    color: var(--linkcolor);
+}
+
+.icons {
+    width: 3em;
+    filter: invert(100%);
+}
+
+#descr h2{
+    color: var(--visitedcolor);
+}
+
+#storia {
+    background-color: var(--content_bgcolor);
+    color: var(--content_txtcolor);
+}
+
+#mezzi {
+    background-color: var(--content_bgcolor);
+    color: var(--content_txtcolor);
 }
