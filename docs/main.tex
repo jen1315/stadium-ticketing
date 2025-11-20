@@ -14,6 +14,7 @@
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[table]{xcolor}
 
 \begin{document}
 
@@ -26,7 +27,6 @@
 Il nostro gruppo ha deciso di progettare un sito di uno stadio che offre l'opportunità di acquistare biglietti agli eventi che ospitano. Per ogni biglietto è possibile selezionare un posto, il quale cambia di costo a seconda della sezione in cui si trova.
 Ogni evento ha una pagina che la descrive
 \subsection{Obiettivo}
-
 
 \section{Utenza}
 Sono descritti in questa sezione i casi d'uso dei diversi utenti che visitano il sito. Saranno specificati le funzionalità ai quali hanno accesso e le informazioni che possono visualizzare.
@@ -44,16 +44,29 @@ Gli utenti registrati nel sito devono eseguire l'accesso alla piattaforma tramit
 
 \section{Design}
 \subsection{Colori}
-#050B1F sfondo
-testo bianco
-#AFEB60 colore di accento
-#BDBDBD colore delle icone
-
+Abbiamo deciso di usare \#050B1F, un blu scuro, per lo sfondo del sito. 
+\#AFEB60 colore di accento
+\#BDBDBD colore delle icone
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        ruolo & codice hex & colore \\ \hline\hline
+        principale & \verb|#050B1F| & \cellcolor[HTML]{050B1F} \\ \hline
+        accento & \verb|#AFEB60| & \cellcolor[HTML]{AFEB60} \\ \hline
+        & \verb|#761A70| & \cellcolor[HTML]{761A70} \\ \hline
+        testo & \verb|#fff| & \\ \hline
+        testo secondario & \verb|#000| & \cellcolor{black} \\ \hline
+        icone & \verb|#BDBDBD| & \cellcolor[HTML]{BDBDBD} \\ \hline
+    \end{tabular}
+    \caption{Palette di colori.}
+\end{table}
+Per consolidare lo stile di icone presenti nel sito, facciamo uso della libreria \href{https://lucide.dev}{Lucide}.
 \subsection{Font}
 \section{Struttura}
 \subsection{HTML}
 \subsection{CSS}
-Definito nel file \verb|style.css|. E' il foglio di stile
+Lo stile principale del sito è definito in \verb|style.css|.
 \subsection{PHP}
 \subsection{Database}
 \section{Funzionalità}

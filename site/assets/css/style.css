@@ -9,8 +9,9 @@
     --linkcolor: #fff;
     --visitedcolor: #AFEB60;
     --iconcolor: #BDBDBD;
-    --content_bgcolor: #BDBDBD;
+    --content_bgcolor: #fff;
     --content_txtcolor: #000;
+    --bread_visitedcolor: #761A70;
 }
 
 html, body {
@@ -43,6 +44,7 @@ body {
 #menu {
     background-color: var(--bgcolor);
     padding: 1em 0em 0.5em 1em;
+    color: var(--txtcolor);
 }
 
 #menu li {
@@ -66,10 +68,9 @@ header h1{
 }
 
 /* Breadcrumb */
-
 #breadcrumb {
-    background-color: var(--bgcolor);
-    color: var(--txtcolor);
+    background-color: var(--visitedcolor);
+    color: var(--content_txtcolor);
     padding: 0.5em 0em 0.5em 1em;
 }
 
@@ -78,7 +79,7 @@ header h1{
 }
 
 #breadcrumb a:visited {
-    color: var(--visitedcolor);
+    color: var(--bread_visitedcolor);
 }
 
 /* Contenuto */
@@ -86,13 +87,54 @@ a {
     color: var(--linkcolor);
 }
 
-.icons {
-    width: 3em;
-    filter: invert(100%);
+a:visited {
+    color: var(--visitedcolor);
 }
 
+.icons {
+    width: 3em;
+}
+
+#contenuto {
+    margin-top: 0.5em;
+}
+
+article {
+    padding: 1em;
+}
+
+/* Footer */
+footer {
+    padding-left: 1em;
+}
+
+footer>dl>dt {
+    color: var(--visitedcolor);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.contatti dt {
+    float: left;
+    margin-right: 0.3em;
+}
+
+.contatti dt::after {
+    content: ": ";
+}
+
+/* index.html */
 #descr h2{
     color: var(--visitedcolor);
+}
+
+#descr ul {
+    list-style-type: none;
 }
 
 #storia {
@@ -100,7 +142,25 @@ a {
     color: var(--content_txtcolor);
 }
 
+#storia h2 {
+    color: var(--bgcolor);
+}
+
 #mezzi {
     background-color: var(--content_bgcolor);
     color: var(--content_txtcolor);
+}
+
+/* listaEventi.html */
+.evento {
+    padding: 1em;
+    text-align: right;
+}
+
+.evento h2 {
+    font-size: 1.5em;
+}
+
+.evento ul {
+    list-style-type: none;
 }

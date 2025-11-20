@@ -1,2 +1,7 @@
-docs/*.pdf
 docs/*.gz
+docs/*.aux
+docs/*.fdb_latexmk
+docs/*.fls
+docs/*.log
+docs/*.out
+docs/*.toc
