@@ -7,7 +7,8 @@
     --bgcolor: #050B1F;
     --txtcolor: #fff;
     --linkcolor: #fff;
-    --visitedcolor: #AFEB60;
+    --visitedcolor: #66A512;
+    --bread_bgcolor: #AFEB60;
     --iconcolor: #BDBDBD;
     --content_bgcolor: #fff;
     --content_txtcolor: #000;
@@ -36,14 +37,14 @@ body {
     text-indent: 0em;
 }
 
-.helpList ul {
+.helpList li {
     display: inline;
 }
 
 /* Menu di navigazione */
 #menu {
     background-color: var(--bgcolor);
-    padding: 1em 0em 0.5em 1em;
+    padding: 1em 0em 1em 1em;
     color: var(--txtcolor);
 }
 
@@ -64,12 +65,12 @@ header h1{
     line-height: 10em;
     margin-top: 0.3em;
     text-align: center;
-    color: var(--visitedcolor);
+    color: var(--bread_bgcolor);
 }
 
 /* Breadcrumb */
 #breadcrumb {
-    background-color: var(--visitedcolor);
+    background-color: var(--bread_bgcolor);
     color: var(--content_txtcolor);
     padding: 0.5em 0em 0.5em 1em;
 }
@@ -109,7 +110,7 @@ footer {
 }
 
 footer>dl>dt {
-    color: var(--visitedcolor);
+    color: var(--bread_bgcolor);
     font-weight: bold;
     font-size: 1.5em;
     margin-top: 0.5em;
@@ -130,7 +131,7 @@ footer ul {
 
 /* index.html */
 #descr h2{
-    color: var(--visitedcolor);
+    color: var(--bread_bgcolor);
 }
 
 #descr ul {
@@ -164,3 +165,5 @@ footer ul {
 .evento ul {
     list-style-type: none;
 }
+
+/* evento.html */

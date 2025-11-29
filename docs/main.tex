@@ -44,9 +44,7 @@ Gli utenti registrati nel sito devono eseguire l'accesso alla piattaforma tramit
 
 \section{Design}
 \subsection{Colori}
-Abbiamo deciso di usare \#050B1F, un blu scuro, per lo sfondo del sito. 
-\#AFEB60 colore di accento
-\#BDBDBD colore delle icone
+Abbiamo deciso di usare usare lo schema di colori presentato nella seguente tabella \ref{table:2}.\par
 \begin{table}[h!]
     \centering
     \begin{tabular}{|c|c|c|}
@@ -59,16 +57,26 @@ Abbiamo deciso di usare \#050B1F, un blu scuro, per lo sfondo del sito.
         testo secondario & \verb|#000| & \cellcolor{black} \\ \hline
         icone & \verb|#BDBDBD| & \cellcolor[HTML]{BDBDBD} \\ \hline
     \end{tabular}
+    \label{table:2}
     \caption{Palette di colori.}
 \end{table}
+Il colore principale è il blu, un colore che evoca calma che reso più scuro appare elegante. Viene considerato inoltre che gli eventi spesso avvengono di notte.\par
+Il verde chiaro usato per accenti come barra di breadcrumb, link visitati e bottoni, è stato scelto per dare energia e per riportare in mente l'immagine del campo d'erba dello stadio.\par
+Abbiamo eseguito i test di contrasto tra i colori del testo e i link e lo sfondo.
+Il contrasto tra il colore principale usato per lo sfondo e il testo è di 19.55:1
+\subsection{Immagini}
 Per consolidare lo stile di icone presenti nel sito, facciamo uso della libreria \href{https://lucide.dev}{Lucide}.
 \subsection{Font}
 \section{Struttura}
 \subsection{HTML}
+Ogni pagina del sito ha un proprio 
 \subsection{CSS}
 Lo stile principale del sito è definito in \verb|style.css|.
 \subsection{PHP}
 \subsection{Database}
 \section{Funzionalità}
+\subsection{Pagine errori}
+La pagina 404 è strutturato in modo da 
 \subsection{Navigazione a tab}
+
 \end{document}
