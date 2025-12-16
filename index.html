@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        .pdfobject-container { height: 500px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li>Documentazione</li>
+                <li><a href="site/index.html">Progetto (vai al sito)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Documentazione</h1>
+        <div id="my-pdf"></div>
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/pdfobject"></script>
+    <script>PDFObject.embed("docs/main.pdf", "#my-pdf");</script>
+</body>
+</html>
