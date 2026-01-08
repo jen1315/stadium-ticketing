@@ -5,6 +5,7 @@
 
 :root {
     --bgcolor: #050B1F;
+    --bggrad: #182445;
     --txtcolor: #fff;
     --linkcolor: #fff;
     --visitedcolor: #66A512;
@@ -96,7 +97,7 @@ a:visited {
 }
 
 article, section {
-    margin-bottom: 1em;
+    padding: 0em 2em 1em 2em;
 }
 
 .icons {
@@ -104,8 +105,8 @@ article, section {
 }
 
 #contenuto {
-    margin-top: 0.5em;
-    padding: 1em 2em 1em 2em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 /* Footer */
@@ -134,12 +135,28 @@ footer ul {
 }
 
 /* index.html */
+#descr {
+    background: linear-gradient(to bottom, var(--bgcolor) 0%, var(--bggrad) 50%, var(--bgcolor) 100%);
+}
+
 #descr h2{
     color: var(--bread_bgcolor);
 }
 
 #descr ul {
     list-style-type: none;
+}
+
+#descr>img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 2em;
+    padding: 1em 0em 1em 0em;
+}
+
+#storia {
+    background: linear-gradient(to bottom, var(--bgcolor) 0%, var(--bggrad) 70%);
 }
 
 #storia h2, #mezzi h2{
@@ -158,8 +175,11 @@ footer ul {
 }
 
 #mezzi {
+    padding: 0em 2em 1em 2em;
     text-align: right;
+    background: linear-gradient(to bottom, var(--bggrad) 0%, var(--bgcolor) 50%);
 }
+
 #mezzi dt {
     position: relative;
     font-weight: bold;
@@ -187,7 +207,7 @@ footer ul {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0.5em;
-    margin-bottom: 1.5em;
+    margin: 0em 2em 1.5em 2em;
 }
 
 .evento h2 {
@@ -199,17 +219,16 @@ footer ul {
 }
 
 /* evento.html */
-#main {
-    padding-bottom: 1em;
+#overview {
     border-bottom: 10px solid var(--bread_bgcolor);
     margin-bottom: 1em;
 }
 
-#main h1 {
+#overview h1 {
     float: right;
 }
 
-#main button {
+#overview button {
     padding: 0.5em;
     font-size: 0.9em;
     border-radius: 2em;
@@ -218,7 +237,7 @@ footer ul {
     text-transform: uppercase;
 }
 
-#main button:nth-of-type(1) {
+#overview button:nth-of-type(1) {
     background-color: var(--bread_bgcolor);
 }
 
@@ -246,6 +265,18 @@ footer ul {
 .data span {
     font-size: 2.5em;
     font-weight: bold;
+}
+
+#dettaglio {
+    background: linear-gradient(to bottom,var(--bgcolor) 0%, var(--bggrad) 50%);
+}
+
+#programma, #info, #features {
+    background-color: var(--bggrad);
+}
+
+#faq {
+    background: linear-gradient(to bottom, var(--bggrad) 0%, var(--bgcolor) 60%);
 }
 
 #programma h2, #features h2 {
